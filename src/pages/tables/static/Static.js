@@ -71,7 +71,7 @@ class Static extends React.Component {
 
     async componentDidMount() {
         const response =
-               await fetch('http://ec2-3-143-232-87.us-east-2.compute.amazonaws.com:8080/order/')
+               await fetch('http://localhost:8080/order/')
 //            await fetch('http://localhost:8080/order/')
         const data = await response.json()
         const info = data.content;

@@ -45,7 +45,7 @@ class OrderPage extends React.Component {
     async componentDidMount() {
         const response =
 //            await fetch('http://ec2-3-143-232-87.us-east-2.compute.amazonaws.com:8080/order/' + this.props.location.id)
-            await fetch('http://ec2-3-143-232-87.us-east-2.compute.amazonaws.com:8080/order/' + 29)
+            await fetch('http://localhost:8080/order/' + 29)
         const resp = await response.json()
         const orderInfo = resp.order
         const productList = resp.orderProductList
